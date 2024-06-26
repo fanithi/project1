@@ -34,11 +34,31 @@ section{
     align-items: center;
 }
 
-@media (max-width:767px) {
-    .navbar .navbar-brand{
-        font-size: 1.3rem; /*Adjust to full width for smaller screens */
+@media (max-width: 1199px) {
+    #navbar {
+        padding: 2rem 3rem; /* Adjust padding for medium screens */
     }
 }
+
+@media (max-width: 991px) {
+    #navbar {
+        padding: 1.5rem 2rem; /* Adjust padding for smaller screens */
+    }
+    .navbar .navbar-brand {
+        font-size: 24px; /* Adjust navbar brand size for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    #navbar {
+        padding: 1rem; /* Adjust padding for extra small screens */
+    }
+    .navbar .navbar-brand {
+        font-size: 1.5rem; /* Further adjust navbar brand size for smaller screens */
+    }
+}
+
+
 /***home***/
 
 #home{
@@ -110,6 +130,8 @@ section{
     letter-spacing: 2px;
     font-weight: 700;
     color: orangered;
+    text-align: center;
+    margin-bottom: 5rem ;
 }
 .card{
     background: linear-gradient(rgba(2,8,28,.5),rgba(2,8,28,.5));
@@ -142,7 +164,7 @@ section{
 
 @media (max-width:576px) {
     .card-img-top{
-        max-width:100%; /*Adjust to full width for smaller screens */
+        max-width: 100%; /*Adjust to full width for smaller screens*/
     }
 }
 
@@ -243,4 +265,11 @@ footer{
 }
 #contact img{
     text-align: center;
+}
+
+@media screen and (max-width:768px){
+    #contact img{
+        max-width: 100%; /*Ensure images don't overflow container*/
+        height: auto; /*Maintain aspect ratio*/
+    }
 }
